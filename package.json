@@ -3,6 +3,11 @@
     "version": "1.0.0",
     "description": "`send`, `edit` or `delete` discord webhooks through the discord API",
     "main": "index.js",
+    "exports": {
+        "import": "./src/index.mjs",
+        "require": "./src/index.js"
+    },
+    "typings": "index.d.ts",
     "scripts": {
         "test": "mocha --timeout 50000"
     },
